@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
     public Button btnExit;
     //public Dropdown dpScenes;
     public Canvas canvas;
-    public GameObject WhiteBall;
+    public GameObject Carro;
 
     // Start is called before the first frame update
     void Start()
@@ -99,12 +99,12 @@ public class UIManager : MonoBehaviour
 
     private SaveData CreateSaveGameObject()
     {
-        var whiteBallData = new SaveData();
-        whiteBallData.positionX = WhiteBall.transform.position.x;
-        whiteBallData.positionY = WhiteBall.transform.position.y;
-        whiteBallData.positionZ = WhiteBall.transform.position.z;
+        var carData = new SaveData();
+        carData.positionX = Carro.transform.position.x;
+        carData.positionY = Carro.transform.position.y;
+        carData.positionZ = Carro.transform.position.z;
 
-        return whiteBallData;
+        return carData;
     }
 
     public void LoadClicked()
@@ -131,7 +131,7 @@ public class UIManager : MonoBehaviour
 
             Debug.Log(save);
 
-            WhiteBall.transform.position = new Vector3(save.positionX, save.positionY, save.positionZ);
+            Carro.transform.position = new Vector3(save.positionX, save.positionY, save.positionZ);
             Debug.Log("Game Loaded");
         }
         else

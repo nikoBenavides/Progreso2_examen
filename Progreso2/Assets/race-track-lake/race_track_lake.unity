@@ -4374,7 +4374,7 @@ MonoBehaviour:
   btnLoad: {fileID: 1058268076}
   btnExit: {fileID: 967844702}
   canvas: {fileID: 556945643}
-  WhiteBall: {fileID: 0}
+  Carro: {fileID: 1060146428}
 --- !u!1001 &641817616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7416,7 +7416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1260756228553936, guid: b471b549ed0cf0b42b15b41a16e07b88, type: 3}
       propertyPath: m_Name
-      value: Free_Racing_Car_Red
+      value: Carro
       objectReference: {fileID: 0}
     - target: {fileID: 4334133988458008, guid: b471b549ed0cf0b42b15b41a16e07b88, type: 3}
       propertyPath: m_RootOrder
